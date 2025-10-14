@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let  num1 , num2 ,  operator, result;
+    
+    for(let a=0; a<100; a++){
+        num1 = Number(prompt("First number"))
+        operator = prompt(" operator (+, -, *, /, %)")
+        num2 =Number(prompt("Second number"))
+
+      if (operator === "+"){
+        result = num1 + num2;
+      }
+      else if (operator === "-"){
+        result = num1 - num2;
+      } 
+      else if (operator === "*"){
+        result = num1 * num2;
+      }
+      else if (operator === "/"){
+            result = num1 / num2; 
+        }
+      
+      else if (operator === "%"){
+        result = num1 % num2;
+        
+      }else {
+    alert("Invalid operator");
+    continue;
+      }
+       console.log("Result:",result);
+      if (result % 2 === 0){
+        console.log("The result is even");
+      } else {
+        console.log("The result is odd");
+      }
+      let keepgoing = prompt ("Do you want to perform another calculation?");
+      if (keepgoing === "no") break;
+
+      
+    }
+   
+     
+    </script>
+</body>
+</html>
